@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Twitter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="leftbar sticky">
+        <input type="button" value="home" class="btn" /><br />
+        <input type="button" value="liked" class="btn" /><br />
+        <button class="postBtn btn" onclick="openForm()">tweet</button>
+        <div class="profile">
+          <img src="images/pfp.png" alt="PFP" />
+          <h3>Ahmed</h3>
+        </div>
+      </div>
+      <div class="mian sticky">
+        <div id="topbar">
+          <a href="#home">Home</a>
+        </div>
+        <div class="postFild">
+          <div class="postFild__top">
+            <input
+              class="postFild_input"
+              id="mainPost"
+              placeholder="What's happening?"
+            />
+          </div>
+          <div class="postFild__bottom">
+            <button id="Tweet_button" class="butn">Post</button>
+          </div>
+        </div>
+        <div class="newsFeed"></div>
+      </div>
+      <div class="rightbar sticky"></div>
+    </div>
+    <div class="postForm form-container" id="postForm">
+      <input
+        type="text"
+        id="tweet"
+        name="tweet"
+        placeholder="what to do"
+      /><br />
+      <input type="button" value="submit" class="submit butn formBtnLeft" />
+      <input
+        type="button"
+        value="cancle"
+        class="butn formBtnRight"
+        onclick="closeForm()"
+      />
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

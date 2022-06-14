@@ -1,0 +1,245 @@
+body {
+  background-color: #15202b;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Ubuntu, 'Helvetica Neue', sans-serif;
+  font-size: 2vh;
+}
+
+.profile {
+  margin-top: 170%;
+  margin-left: 8%;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.leftbar {
+  left: 0;
+  bottom: 0;
+  width: 16%;
+  z-index: 1;
+  padding-top: 5%;
+  padding-left: 15%;
+}
+
+.mian {
+  position: absolute !important;
+  width: 31%;
+  margin: 0 38% 0 31%;
+  z-index: -1;
+  border: 0.07vw solid rgb(56, 68, 77);
+  border-color: rgb(56, 68, 77);
+}
+
+.rightbar {
+  bottom: 0;
+  right: 0;
+  width: 38%;
+  z-index: 1;
+}
+
+#topbar {
+  overflow: hidden;
+  z-index: 2;
+  border-bottom: 0.07vw solid rgb(56, 68, 77);
+  background-color: #15202b;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+#topbar.sticky {
+  width: 31%;
+}
+
+.postFild {
+  border-bottom: 1.5vh solid #253341;
+}
+
+.postFild__top {
+  position: relative;
+  padding: 3.5% 2%;
+  height: 10%;
+}
+
+.postFild_input {
+  width: 100%;
+  height: 100%;
+  padding: 2.5%;
+  font-size: 105%;
+  color: #868c98;
+  background-color: transparent;
+  border: none;
+}
+
+.padding_top15 {
+  padding-top: 15%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+#topbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2.5%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.postFild__top {
+  display: flex;
+}
+
+#Tweet_button {
+  position: relative;
+  padding: 0 5%;
+  border: none;
+  border-radius: 10px;
+}
+
+.newsFeed {
+  height: 72vh;
+}
+
+.headBar {
+  widows: 100%;
+  height: 5vh;
+  font-size: 30px;
+  padding: 5px 15px;
+}
+
+/* Customising the post field */
+
+.post {
+  border: 2px solid #253341;
+  background-color: transparent;
+  color: white;
+}
+
+.post p {
+  display: block;
+  padding: 0.5% 2%;
+  overflow: hidden;
+}
+
+.likeBtn {
+  width: 10%;
+  margin-left: 5vw;
+  cursor: pointer;
+}
+
+.shareBtn {
+  width: 10%;
+  float: right;
+  margin-right: 5vw;
+  margin-top: -11%;
+  cursor: pointer;
+}
+
+.liked {
+  color: black;
+  background-color: pink;
+  transition: 1s;
+}
+
+.shared {
+  border-radius: 50px;
+  background-color: greenyellow;
+}
+
+.postForm {
+  display: none;
+}
+
+.postBtn,
+.butn {
+  border-color: #26496190;
+  background-color: rgb(62, 167, 236);
+  border-radius: 30px;
+  font-size: 150%;
+  padding: 0.5% 1.5%;
+  margin: 5% 10%;
+  cursor: pointer;
+}
+
+.butn {
+  margin: 4%;
+}
+
+.fotmBtnLeft {
+  float: left;
+}
+
+.formBtnRight {
+  float: right;
+}
+
+.postBtn:hover {
+  box-shadow: cornflowerblue 0px 5px 30px 10px;
+  background-color: cyan;
+  transition: 0.4s;
+}
+
+.postForm {
+  display: none;
+  position: fixed;
+  bottom: 50%;
+  right: 36.5%;
+  border: 0.2vw solid cyan;
+  border-radius: 20px;
+}
+
+.form-container {
+  width: 32%;
+  height: 22%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(30, 89, 199);
+}
+
+.form-container input[type='text'] {
+  width: 90%;
+  padding: 4% 1% 6% 5%;
+  margin-top: 1%;
+  margin-left: 2%;
+  border-radius: 20vh;
+  font-size: 150%;
+  border: none;
+  background: #ffffff;
+}
+
+.form-container input[type='text']:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.leftbar input[type='button'] {
+  text-align: left;
+  margin: 4% 0 0 5%;
+  border: 0;
+  background-color: #15202b;
+  border-radius: 30px;
+  font-size: 130%;
+  width: 30%;
+  height: 4%;
+  padding-left: 5%;
+  color: #868c98;
+}
+
+.leftbar input[type='button']:hover {
+  background-color: aqua;
+  transition: 0.5s;
+}
