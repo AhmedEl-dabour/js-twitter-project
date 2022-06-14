@@ -1,1 +1,1 @@
-# JS-myTwitter
+# JS-myTwitter-project
